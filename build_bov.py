@@ -397,7 +397,7 @@ SALE_COMPS = [
     {"num": 2, "addr": "12807 Barbara Ann St, Valley Glen", "units": 6, "yr": 2024, "sf": 9570, "price": 3795000, "ppu": 632500, "psf": 397, "cap": 6.01, "grm": 13.37, "date": "10/2024", "dom": 13, "notes": "New construction, projected rents", "tier": 2, "laaa": False},
     {"num": 3, "addr": "14243 Victory Blvd, Van Nuys", "units": 5, "yr": 2022, "sf": 5888, "price": 2665000, "ppu": 533000, "psf": 453, "cap": 5.16, "grm": 13.80, "date": "10/2024", "dom": 17, "notes": "2022 new construction", "tier": 2, "laaa": False},
     {"num": 4, "addr": "14121 Friar St, Van Nuys", "units": 7, "yr": 1998, "sf": 6526, "price": 2050000, "ppu": 292857, "psf": 314, "cap": 6.33, "grm": 11.30, "date": "12/2025", "dom": 120, "notes": "Value floor, older vintage", "tier": 2, "laaa": False},
-    {"num": 5, "addr": "13015 Vanowen St, N Hollywood", "units": 10, "yr": 1984, "sf": 4811, "price": 2175000, "ppu": 217500, "psf": 452, "cap": 5.59, "grm": "--", "date": "01/2026", "dom": 14, "notes": "RSO reference only", "tier": 3, "laaa": False},
+    {"num": 5, "addr": "13015 Vanowen St, N Hollywood", "units": 10, "yr": 1984, "sf": 4811, "price": 2175000, "ppu": 217500, "psf": 452, "cap": 5.59, "grm": "--", "date": "01/2026", "dom": 14, "notes": "AB 1482 reference only", "tier": 3, "laaa": False},
 ]
 
 # On-Market Comps
@@ -456,7 +456,6 @@ HIGHLIGHTS = [
     ("In-Unit Laundry All Units", "Every unit features in-unit washer/dryer connections - a premium amenity that commands top-of-market rent achievement and reduces tenant turnover"),
     ("Opportunity Zone Location", "Located in a federally designated Opportunity Zone, an area benefiting from increased development investment that supports long-term neighborhood growth"),
     ("TOC Tier 4 - Highest Transit Designation", "80% density bonus and ED 1 eligibility reflect the property's exceptional transit connectivity and municipal support for residential density"),
-    ("Adjacent Assemblage Potential", "6716 Sylmar Ave (adjacent parcel) may be same-owner - potential assemblage opportunity for future development"),
 ]
 
 # Location Overview (2-3 paragraphs, ~80 words each)
@@ -492,7 +491,7 @@ BUYER_TYPES = [
 ]
 BUYER_OBJECTIONS = [
     ("How does the VLI unit affect value?", "Unit 105 is deed-restricted at approximately $1,066/mo under a Very Low Income covenant tied to the original density bonus entitlement, lasting until approximately 2076. This represents one of 11 units (9.1%), reducing annual income by approximately $21K versus market. The restriction is permanent and factored into our pricing - the -5% VLI discount is applied to all comparable adjustments."),
-    ("What are the 3 code enforcement cases?", "The case details have not been fully expanded in available LADBS records. Buyers should request a formal LADBS code enforcement report during due diligence. Given the 2020 construction date, these may relate to construction-period items or minor tenant complaints rather than structural issues."),
+    ("What are the 3 code enforcement cases?", "The case details have not been fully expanded in available LADBS records. Buyers should request a formal LADBS code enforcement report during due diligence to confirm the nature and resolution status of each case."),
     ("Why is this priced at $372K/unit when older comps trade at $290-$340K?", "The correct comparison is to other 2020s-vintage non-RSO assets. 14243 Victory Blvd (2022, 5 units) sold at $533K/unit and 12807 Barbara Ann St (2024, 6 units) sold at $633K/unit. At $372K/unit, the subject is priced 30-41% below these new-construction comps, reflecting the VLI covenant drag and the larger 11-unit size. The primary anchor, 14622 Gilmore St (2009), adjusts to $352K/unit after accounting for the subject's newer construction premium."),
     ("What about the property tax reassessment?", "The current property tax of approximately $12K reflects the original Prop 13 basis from the pre-construction land purchase. At the list price of $4.1M, the buyer should expect reassessment to approximately $48K annually (1.17% of purchase price). Our underwriting already reflects this reassessed tax in the current NOI figure of $217K."),
 ]
