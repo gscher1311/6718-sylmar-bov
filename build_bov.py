@@ -1222,6 +1222,28 @@ html_parts.append("""
   .footer-headshot { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .price-reveal { page-break-before: always; }
   #property-info { page-break-before: always; }
+
+  /* --- Page-break discipline --- */
+  p { orphans: 3; widows: 3; }
+  table { page-break-inside: avoid; }
+  .section-title, .section-subtitle, .section-divider { page-break-after: avoid; }
+  .metrics-grid { page-break-inside: avoid; }
+  .metric-card { page-break-inside: avoid; }
+  .highlight-box { page-break-inside: avoid; }
+  .obj-item { page-break-inside: avoid; }
+  .bio-card { page-break-inside: avoid; }
+  .inv-highlights { page-break-inside: avoid; }
+  .photo-grid { page-break-inside: avoid; }
+  .prop-grid-4 { page-break-inside: avoid; }
+  .loc-grid { page-break-inside: avoid; }
+  .feature-item { page-break-inside: avoid; }
+  .mkt-channel { page-break-inside: avoid; }
+  .perf-card { page-break-inside: avoid; }
+  .team-grid { page-break-inside: avoid; }
+  .costar-badge { page-break-inside: avoid; }
+  .press-strip { page-break-inside: avoid; }
+  .summary-two-col { page-break-inside: avoid; }
+  #pdfOverlay { display: none !important; }
 }
 """)
 
@@ -1884,10 +1906,16 @@ html_parts.append(f"""
 
 # PDF Download Button
 html_parts.append(f"""
-<a href="{PDF_LINK}" class="pdf-float-btn" target="_blank">
+<a href="{PDF_LINK}" class="pdf-float-btn" id="pdfBtn" target="_blank">
   <svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
   Download PDF
 </a>
+<div id="pdfOverlay" style="display:none;position:fixed;inset:0;background:rgba(27,58,92,0.85);z-index:99999;justify-content:center;align-items:center;flex-direction:column;gap:12px;">
+  <div style="width:48px;height:48px;border:4px solid rgba(197,162,88,0.3);border-top-color:#C5A258;border-radius:50%;animation:pdfSpin 0.8s linear infinite;"></div>
+  <div style="color:#fff;font-size:20px;font-weight:700;letter-spacing:0.5px;">Generating PDF</div>
+  <div style="color:#C5A258;font-size:13px;">This typically takes 15–30 seconds. A new tab will open with your download.</div>
+</div>
+<style>@keyframes pdfSpin {{from{{transform:rotate(0deg)}}to{{transform:rotate(360deg)}}}}</style>
 """)
 
 # ============================================================
@@ -1932,6 +1960,16 @@ function updateActiveTocLink() {{
 }}
 window.addEventListener('scroll', updateActiveTocLink);
 updateActiveTocLink();
+
+// PDF button loading overlay
+var pdfBtn = document.getElementById('pdfBtn');
+var pdfOverlay = document.getElementById('pdfOverlay');
+if (pdfBtn && pdfOverlay) {{
+  pdfBtn.addEventListener('click', function() {{
+    pdfOverlay.style.display = 'flex';
+    setTimeout(function() {{ pdfOverlay.style.display = 'none'; }}, 8000);
+  }});
+}}
 
 // Leaflet Maps
 {sale_map_js}
