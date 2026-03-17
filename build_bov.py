@@ -50,7 +50,7 @@ PROPERTY_TYPE = "stabilized"  # DEAL-SPECIFIC: "value-add" or "stabilized"
 # Add/remove agents as needed per deal
 COVER_AGENTS = [  # DEAL-SPECIFIC
     {"name": "Glen Scher", "title": "SMDI", "img_key": "glen"},
-    {"name": "Filip Niculete", "title": "SVPI", "img_key": "filip"},
+    {"name": "Filip Niculete", "title": "SMDI", "img_key": "filip"},
     {"name": "Morgan Wetmore", "title": "Associate", "img_key": "team_morgan"},
 ]
 FOOTER_AGENTS = [  # DEAL-SPECIFIC
@@ -64,7 +64,7 @@ FOOTER_AGENTS = [  # DEAL-SPECIFIC
     },
     {
         "name": "Filip Niculete",
-        "title": "Senior Vice President Investments",
+        "title": "Senior Managing Director Investments",
         "phone": "(818) 212-2812",
         "email": "Filip.Niculete@marcusmillichap.com",
         "license": "01996429",
@@ -393,11 +393,11 @@ RENT_ROLL = [
 # - tier: 1 (primary), 2 (supporting), 3 (reference) — from COMP_ANALYSIS_PROTOCOL.md
 # - laaa: True if Glen/Filip/LAAA Team sold this comp (gets gold badge in table)
 SALE_COMPS = [
-    {"num": 1, "addr": "14622 Gilmore St, Van Nuys", "units": 6, "yr": 2009, "sf": 5400, "price": 2050000, "ppu": 341667, "psf": 380, "cap": 5.39, "grm": 12.10, "date": "05/2025", "dom": 45, "notes": "Primary anchor, best data", "tier": 1, "laaa": False},
-    {"num": 2, "addr": "12807 Barbara Ann St, Valley Glen", "units": 6, "yr": 2024, "sf": 6000, "price": 3795000, "ppu": 632500, "psf": 633, "cap": 6.01, "grm": 13.37, "date": "10/2024", "dom": 30, "notes": "New construction, projected rents", "tier": 2, "laaa": False},
-    {"num": 3, "addr": "14243 Victory Blvd, Van Nuys", "units": 5, "yr": 2022, "sf": 5200, "price": 2665000, "ppu": 533000, "psf": 513, "cap": 5.16, "grm": 13.80, "date": "10/2024", "dom": 90, "notes": "2022 new construction", "tier": 2, "laaa": False},
-    {"num": 4, "addr": "14121 Friar St, Van Nuys", "units": 7, "yr": 1998, "sf": 5600, "price": 2050000, "ppu": 292857, "psf": 366, "cap": 6.33, "grm": 11.30, "date": "12/2025", "dom": 120, "notes": "Value floor, older vintage", "tier": 2, "laaa": False},
-    {"num": 5, "addr": "13015 Vanowen St, N Hollywood", "units": 10, "yr": 1984, "sf": 8000, "price": 2175000, "ppu": 217500, "psf": 272, "cap": 5.59, "grm": "--", "date": "01/2026", "dom": 60, "notes": "RSO reference only", "tier": 3, "laaa": False},
+    {"num": 1, "addr": "14622 Gilmore St, Van Nuys", "units": 6, "yr": 2009, "sf": 7770, "price": 2050000, "ppu": 341667, "psf": 264, "cap": 5.39, "grm": 12.10, "date": "05/2025", "dom": 8, "notes": "Primary anchor, best data", "tier": 1, "laaa": False},
+    {"num": 2, "addr": "12807 Barbara Ann St, Valley Glen", "units": 6, "yr": 2024, "sf": 9570, "price": 3795000, "ppu": 632500, "psf": 397, "cap": 6.01, "grm": 13.37, "date": "10/2024", "dom": 13, "notes": "New construction, projected rents", "tier": 2, "laaa": False},
+    {"num": 3, "addr": "14243 Victory Blvd, Van Nuys", "units": 5, "yr": 2022, "sf": 5888, "price": 2665000, "ppu": 533000, "psf": 453, "cap": 5.16, "grm": 13.80, "date": "10/2024", "dom": 17, "notes": "2022 new construction", "tier": 2, "laaa": False},
+    {"num": 4, "addr": "14121 Friar St, Van Nuys", "units": 7, "yr": 1998, "sf": 6526, "price": 2050000, "ppu": 292857, "psf": 314, "cap": 6.33, "grm": 11.30, "date": "12/2025", "dom": 120, "notes": "Value floor, older vintage", "tier": 2, "laaa": False},
+    {"num": 5, "addr": "13015 Vanowen St, N Hollywood", "units": 10, "yr": 1984, "sf": 4811, "price": 2175000, "ppu": 217500, "psf": 452, "cap": 5.59, "grm": "--", "date": "01/2026", "dom": 14, "notes": "RSO reference only", "tier": 3, "laaa": False},
 ]
 
 # On-Market Comps
@@ -516,7 +516,7 @@ ON_MARKET_NARRATIVE = "No directly comparable active listings were identified in
 # P1: Anchor to Tier 1 weighted average. P2: Most recent data + confidence. P3 (optional): Limitations.
 PRICING_RATIONALE = """<p>Our suggested list price of $4.1M ($373K/unit) is anchored by the primary comparable - 14622 Gilmore St ($342K/unit, 2009, closest complete-data non-RSO match) - which, after adjustments for new construction premium, size, VLI covenant, and Opportunity Zone, implies a value of $352K/unit. The subject at $372K/unit reflects a 6% premium to this anchor, supported by 2020 institutional-quality construction, in-unit laundry in all 11 units, subterranean parking, and AB 1482 exemption until 2035. Two additional new-construction comps (Victory at $533K/unit and Barbara Ann at $633K/unit) confirm that $372K/unit is priced conservatively within the 2020s-vintage value band.</p>
 
-<p>The GRM of 12.53 at the list price aligns with the comp range of 11.30-13.80. The most recent transaction, 14121 Friar St (December 2025, $293K/unit), represents older 1998 inventory and establishes a clear value floor that the subject's 2020 construction quality significantly exceeds. Based on 5 comparable sales spanning October 2024 to December 2025, with 1 primary comp and 3 supporting Tier 2 comps, we have MODERATE confidence in this value range. The dominant source of pricing uncertainty is the massive property tax reassessment ($12K to ~$47K), which required 4 iteration passes to stabilize.</p>"""
+<p>The GRM of 12.53 at the list price aligns with the comp range of 11.30-13.80. The most recent transaction, 14121 Friar St (December 2025, $293K/unit), represents older 1998 inventory and establishes a clear value floor that the subject's 2020 construction quality significantly exceeds. Based on 5 comparable sales spanning October 2024 to January 2026, with 1 primary comp and 3 supporting Tier 2 comps, we have MODERATE confidence in this value range. The dominant source of pricing uncertainty is the massive property tax reassessment ($12K to ~$47K), which required 4 iteration passes to stabilize.</p>"""
 
 # Comp analysis confidence level — from COMP_ANALYSIS_PROTOCOL.md
 # "HIGH", "MODERATE", or "LOW" — displayed as badge in pricing section
