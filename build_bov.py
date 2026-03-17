@@ -65,17 +65,17 @@ FOOTER_AGENTS = [  # DEAL-SPECIFIC
     {
         "name": "Filip Niculete",
         "title": "Senior Managing Director Investments",
-        "phone": "(818) 212-2812",
+        "phone": "(818) 212-2748",
         "email": "Filip.Niculete@marcusmillichap.com",
-        "license": "01996429",
+        "license": "01905352",
         "img_key": "filip",
     },
     {
         "name": "Morgan Wetmore",
         "title": "Associate",
-        "phone": "(818) 212-2721",
+        "phone": "(818) 212-2724",
         "email": "Morgan.Wetmore@marcusmillichap.com",
-        "license": "02243498",
+        "license": "02209935",
         "img_key": "team_morgan",
     },
 ]
@@ -1305,7 +1305,7 @@ html_parts.append(f"""
   </div>
   <div class="tr-map-print"><img src="{IMG['closings_map']}" alt="LAAA Closings Map"></div>
   <div class="tr-service-quote">
-    <h3>"We Didn't Invent Great Service... We Just Set the Standard."</h3>
+    <h3>"We Didn't Invent Great Service, We Just Work Relentlessly to Provide It."</h3>
     <p>{MISSION_P1}</p>
     <p>{MISSION_P2}</p>
     <p>{MISSION_P3}</p>
@@ -1337,8 +1337,8 @@ for name, title, img_key in team_members:
     </div>\n'''
 
 # Glen and Filip bios — DEAL-SPECIFIC (update from team_bios.md)
-GLEN_BIO = "Glen Scher is a Senior Managing Director of Investments at Marcus &amp; Millichap, specializing in multifamily investment sales throughout the Greater Los Angeles area. With over a decade of experience and 500+ closed transactions totaling $1.6B+ in volume, Glen provides data-driven advisory services to private investors and institutions."  # DEAL-SPECIFIC
-FILIP_BIO = "Filip Niculete is a Senior Managing Director of Investments at Marcus &amp; Millichap. Filip and Glen co-lead the LAAA Team, combining deep market expertise with institutional-grade analytics to deliver results for multifamily investors across LA County."  # DEAL-SPECIFIC
+GLEN_BIO = "Glen Scher is one of the top multifamily brokers in Los Angeles, with over 450 transactions and $1.4 billion in closed sales across LA and the Ventura &amp; Santa Barbara counties. A Senior Managing Director at Marcus &amp; Millichap and co-founder of the LAAA Team, Glen has consistently closed 40+ deals per year since launching his career in 2014 after graduating from UC Santa Barbara with a degree in Economics. He has earned Marcus &amp; Millichap's Chairman's Club honor and multiple National Achievement Awards."  # DEAL-SPECIFIC — from team_bios.md
+FILIP_BIO = "Filip Niculete is one of Southern California's top commercial real estate brokers and co-founder of the LAAA Team. Born in Romania and raised in the San Fernando Valley, Filip studied Finance at San Diego State University and began his career at Marcus &amp; Millichap in 2011. He and the LAAA Team have closed over $1.4 billion in transactions, earning Chairman's Club honors and multiple National Achievement Awards."  # DEAL-SPECIFIC — from team_bios.md
 
 html_parts.append(f"""
 <div class="tr-page2">
